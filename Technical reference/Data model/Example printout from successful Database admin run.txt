@@ -1,0 +1,336 @@
+X:\FRMS_Vietnam\RELEASES\Database Admin\DA\database-admin>run.bat
+
+X:\FRMS_Vietnam\RELEASES\Database Admin\DA\database-admin>call profile\devenv.ba
+t
+Unable to locate tools.jar. Expected to find it in X:\FRMS_Vietnam\RELEASES\Data
+base Admin\DA\lib\tools.jar
+Buildfile: X:\FRMS_Vietnam\RELEASES\Database Admin\DA\database-admin\datamodel\b
+uild\build.xml
+
+get_dependencies:
+[ivy:resolve] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/
+ ::
+[ivy:resolve] :: loading settings :: file = X:\FRMS_Vietnam\RELEASES\Database Ad
+min\DA\database-admin\datamodel\build\datamodel-ivysettings.xml
+[ivy:resolve] :: resolving dependencies :: org.arbonaut.formis#database;1.0.0
+[ivy:resolve]   confs: [pg]
+[ivy:resolve]   found org.postgresql#postgresql;42.1.1 in central
+[ivy:resolve] :: resolution report :: resolve 92ms :: artifacts dl 2ms
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |        pg        |   1   |   0   |   0   |   0   ||   1   |   0   |
+        ---------------------------------------------------------------------
+[ivy:cachepath] DEPRECATED: 'ivy.conf.file' is deprecated, use 'ivy.settings.fil
+e' instead
+[ivy:cachepath] :: loading settings :: file = X:\FRMS_Vietnam\RELEASES\Database
+Admin\DA\database-admin\datamodel\build\datamodel-ivysettings.xml
+[ivy:cachepath] DEPRECATED: useOrigin option is deprecated when calling resolve,
+ use useOrigin setting on the cache implementation instead
+[ivy:cachepath] :: resolving dependencies :: org.arbonaut.formis#database;1.0.0
+[ivy:cachepath]         confs: [default]
+[ivy:cachepath]         found org.postgresql#postgresql;42.1.1 in central
+[ivy:cachepath] :: resolution report :: resolve 37ms :: artifacts dl 1ms
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+        ---------------------------------------------------------------------
+
+initialize_db_before_transfer:
+     [echo] Creating a local FORMIS database (PostgreSQL) at URL: @{url}
+      [sql] Executing resource: X:\FRMS_Vietnam\RELEASES\Database Admin\DA\datab
+ase-admin\datamodel\clean\drop_database.sql
+      [sql] Executing resource: X:\FRMS_Vietnam\RELEASES\Database Admin\DA\datab
+ase-admin\datamodel\original\001_create_database.sql
+      [sql] 2 of 2 SQL statements executed successfully
+    [mkdir] Created dir: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-ddl-416
+033827
+     [copy] Copying 14 files to C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\003_init_database.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\005_create_types.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\008_create_sequences.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\010-L_create_symds_schema.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\010_create_tables.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\020-L_create_tables.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\065-L_create_triggers.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\070-L-create_functions.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\080_create_functions.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\082_create_report_functions.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\099_create_comments.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-416033827\101_create_outdated_report_functions.sql
+      [sql] 12 of 12 SQL statements executed successfully
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+
+OSGEO4W home is X:\FRMS_Vietnam\RELEASES\Database Admin\DA\database-admin\OSGeo4
+W-frms
+
+Import of data from FRMS central database to the client package database...
+[province] ma 16.10.2017 23:27:40,29
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[district] ma 16.10.2017 23:27:44,20
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[commune] ma 16.10.2017 23:27:50,72
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[config_mymaps] ma 16.10.2017 23:28:17,98
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[config_operator] ma 16.10.2017 23:28:29,25
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[config_query_advance] ma 16.10.2017 23:28:31,15
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[config_report] ma 16.10.2017 23:28:33,02
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[config_show] ma 16.10.2017 23:28:34,93
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[config_style] ma 16.10.2017 23:28:36,82
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[config_validation] ma 16.10.2017 23:28:38,78
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[conflict_situation] ma 16.10.2017 23:28:40,67
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[department] ma 16.10.2017 23:28:42,56
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[dept_location_per] ma 16.10.2017 23:28:44,37
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+[eco_zone] ma 16.10.2017 23:28:46,19
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[forest_actor_type] ma 16.10.2017 23:28:48,00
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[forest_function] ma 16.10.2017 23:28:49,85
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[forest_origin] ma 16.10.2017 23:28:51,70
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[forest_use_situation] ma 16.10.2017 23:28:53,58
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[land_use_certificate] ma 16.10.2017 23:28:55,39
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[lang_merge] ma 16.10.2017 23:28:57,24
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[layer_styles ] ma 16.10.2017 23:28:59,07
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+[monitoring_change_type] ma 16.10.2017 23:29:00,91
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[monitoring_type] ma 16.10.2017 23:29:02,73
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[natural_forest_origin] ma 16.10.2017 23:29:04,58
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[p_forest_origin] ma 16.10.2017 23:29:06,39
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[permission] ma 16.10.2017 23:29:08,22
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[plantation_state] ma 16.10.2017 23:29:10,09
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[plot_position_status] ma 16.10.2017 23:29:11,94
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[protection_contract] ma 16.10.2017 23:29:13,83
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[report_group] ma 16.10.2017 23:29:15,78
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[report_group_reports] ma 16.10.2017 23:29:17,72
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[report_layer] ma 16.10.2017 23:29:19,56
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[report_period] ma 16.10.2017 23:29:21,44
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+[role] ma 16.10.2017 23:29:23,27
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[role_permission] ma 16.10.2017 23:29:25,10
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[site_condition] ma 16.10.2017 23:29:26,95
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[status_config_sql] ma 16.10.2017 23:29:28,81
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[status_report_status] ma 16.10.2017 23:29:30,69
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[status_report_type] ma 16.10.2017 23:29:32,53
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+[tree_specie] ma 16.10.2017 23:29:34,39
+Warning 1: layer names ignored in combination with -sql.
+Warning 1: Layer creation options ignored since an existing layer is
+         being appended to.
+0...10...20...30...40...50...60...70...80...90...100 - done.
+Transferring features finished ma 16.10.2017 23:29:36,26
+...data transfer done ma 16.10.2017 23:29:36,26!
+Exiting...
+Unable to locate tools.jar. Expected to find it in X:\FRMS_Vietnam\RELEASES\Data
+base Admin\DA\lib\tools.jar
+Buildfile: X:\FRMS_Vietnam\RELEASES\Database Admin\DA\database-admin\datamodel\b
+uild\build.xml
+
+get_dependencies:
+[ivy:resolve] :: Apache Ivy 2.4.0 - 20141213170938 :: http://ant.apache.org/ivy/
+ ::
+[ivy:resolve] :: loading settings :: file = X:\FRMS_Vietnam\RELEASES\Database Ad
+min\DA\database-admin\datamodel\build\datamodel-ivysettings.xml
+[ivy:resolve] :: resolving dependencies :: org.arbonaut.formis#database;1.0.0
+[ivy:resolve]   confs: [pg]
+[ivy:resolve]   found org.postgresql#postgresql;42.1.1 in central
+[ivy:resolve] :: resolution report :: resolve 95ms :: artifacts dl 2ms
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |        pg        |   1   |   0   |   0   |   0   ||   1   |   0   |
+        ---------------------------------------------------------------------
+[ivy:cachepath] DEPRECATED: 'ivy.conf.file' is deprecated, use 'ivy.settings.fil
+e' instead
+[ivy:cachepath] :: loading settings :: file = X:\FRMS_Vietnam\RELEASES\Database
+Admin\DA\database-admin\datamodel\build\datamodel-ivysettings.xml
+[ivy:cachepath] DEPRECATED: useOrigin option is deprecated when calling resolve,
+ use useOrigin setting on the cache implementation instead
+[ivy:cachepath] :: resolving dependencies :: org.arbonaut.formis#database;1.0.0
+[ivy:cachepath]         confs: [default]
+[ivy:cachepath]         found org.postgresql#postgresql;42.1.1 in central
+[ivy:cachepath] :: resolution report :: resolve 38ms :: artifacts dl 1ms
+        ---------------------------------------------------------------------
+        |                  |            modules            ||   artifacts   |
+        |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+        ---------------------------------------------------------------------
+        |      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+        ---------------------------------------------------------------------
+
+finalize_db_after_transfer:
+    [mkdir] Created dir: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-ddl-182
+2751604
+     [copy] Copying 14 files to C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-1822751604
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-1822751604\205_create_pk_constraints.sql
+      [sql] Executing resource: C:\Users\pasiroti\AppData\Local\Temp\.frms\frms-
+ddl-1822751604\210_create_indexes.sql
+      [sql] 2 of 2 SQL statements executed successfully
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Press any key to continue . . .
